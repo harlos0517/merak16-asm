@@ -1,0 +1,27 @@
+{
+  "name": "merak16-asm",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/harlos0517/merak16-asm",
+  "author": "Harlos",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "npm": ">=9.0.0 <9.9.0",
+    "node": ">=18.0.0 <18.19.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.48.0",
+    "eslint-plugin-eqeqeq-fix": "^1.0.3",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "run": "tsc --noEmit && tsx src/index.ts"
+  }
+}

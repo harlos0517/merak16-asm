@@ -1,0 +1,34 @@
+import { OPCODE } from '@/op'
+
+export enum ALUOP_CODE {
+  AND = 0b000000,
+  OR  = 0b000001,
+  XOR = 0b000010,
+  ADD = 0b000011,
+  SUB = 0b000100,
+  SLL = 0b000101,
+  SRA = 0b000110,
+  SRL = 0b000111,
+}
+
+export const aluops = [
+  OPCODE.AND,
+  OPCODE.OR,
+  OPCODE.XOR,
+  OPCODE.ADD,
+  OPCODE.SUB,
+  OPCODE.SLL,
+  OPCODE.SRA,
+  OPCODE.SRL,
+]
+
+export const aluopMap: Partial<Record<OPCODE, ALUOP_CODE>> = {
+  [OPCODE.AND]: ALUOP_CODE.AND,
+  [OPCODE.OR]: ALUOP_CODE.OR,
+  [OPCODE.XOR]: ALUOP_CODE.XOR,
+  [OPCODE.ADD]: ALUOP_CODE.ADD,
+  [OPCODE.SUB]: ALUOP_CODE.SUB,
+  [OPCODE.SLL]: ALUOP_CODE.SLL,
+  [OPCODE.SRA]: ALUOP_CODE.SRA,
+  [OPCODE.SRL]: ALUOP_CODE.SRL,
+}
